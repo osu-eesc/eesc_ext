@@ -8,7 +8,7 @@
  */
 function eesc_ext_profile_modules() {
   // Core modules to add
-  $ret= array('aggregator', 'book', 'color', 'help', 'menu', 'path', 'php', 'poll', 'taxonomy', 'throttle', 'translation', 'trigger', 'upload', 'dblog');
+  $ret= array('aggregator', 'book', 'color', 'help', 'menu', 'path', 'php', 'taxonomy', 'translation', 'trigger', 'upload', 'dblog');
 
   // Non-core modules
   $ret[]='admin_menu';
@@ -36,22 +36,20 @@ function eesc_ext_profile_modules() {
   $ret[]='fieldgroup';
   $ret[]='filefield';
   $ret[]='filefield_sources';
-  $ret[]='glossary';
   $ret[]='globalredirect';
   $ret[]='image_resize_filter';
   $ret[]='imageapi';
   $ret[]='imageapi_gd';
   $ret[]='imagecache';
-	$ret[]='imagecache_ui';
+  $ret[]='imagecache_ui';
   $ret[]='imagefield';
   $ret[]='imce';
   $ret[]='imce_wysiwyg';
-	$ret[]='jcarousel';
-	$ret[]='jquery_ui';
+  $ret[]='jcarousel';
+  $ret[]='jquery_ui';
   $ret[]='link';
   $ret[]='lightbox2';
-  $ret[]='locale';
-	$ret[]='menu_breadcrumb';
+  $ret[]='menu_breadcrumb';
   $ret[]='nodereference';
   $ret[]='nodereference_url';
   $ret[]='number';
@@ -59,8 +57,6 @@ function eesc_ext_profile_modules() {
   $ret[]='openlayers';
   $ret[]='openlayers_geocoder';
   $ret[]='osu_search';
-  $ret[]='osu_sso';
-  $ret[]='osu_update';
   $ret[]='path_redirect';
   $ret[]='pathauto';
   $ret[]='pathfilter';
@@ -76,8 +72,8 @@ function eesc_ext_profile_modules() {
   $ret[]='views_attach';
   $ret[]='views_export';
   $ret[]='views_slideshow';
-	$ret[]='views_slideshow_singleframe';
-	$ret[]='photo_gallery';
+  $ret[]='views_slideshow_singleframe';
+  $ret[]='photo_gallery';
   $ret[]='viewscarousel';
   $ret[]='views_ui';
   $ret[]='wysiwyg';
@@ -264,19 +260,7 @@ function eesc_ext_profile_tasks(&$task = 'profile', $url = null) {
       //update the default file types that are allowed to be uploaded
       variable_set('upload_extensions_default', 'doc xls ppt docx xlsx pptx pdf swf txt jpg jpeg gif png pps odt ods odp rtf zip csv');
       
-      //enable sso
-      variable_set('osu_sso_enable', '1');
-      variable_set('osu_sso_service','cws_drupal');
-      variable_set('osu_sso_password','sahChae7');
-      variable_set('osu_sso_host', 'secure.onid.oregonstate.edu');
-      variable_set('osu_sso_path', '/sso/rpc');
-      variable_set('osu_sso_cookie', 'sso');
-      variable_set('osu_sso_login_url', 'https://secure.onid.oregonstate.edu/login');
-      variable_set('osu_sso_access', '0');
-      variable_set('osu_sso_pages', "");
-      variable_set('osu_sso_hide_email', '0');
-      variable_set('osu_sso_user_register', '0');
-
+     
 			// set defaults for admin_menu
 			variable_set('admin_menu_position_fixed', '1');
 			variable_set('admin_menu_tweak_modules', '1');
