@@ -13,10 +13,8 @@ function eesc_ext_profile_modules() {
   // Non-core modules
   $ret[]='admin_menu';
   $ret[]='advanced_help';
-  $ret[]='announcement';
   $ret[]='auto_nodetitle';
   $ret[]='blocks404';
-  $ret[]='cacherouter';
   $ret[]='content';
   $ret[]='content_copy';
   $ret[]='ctools';
@@ -72,7 +70,6 @@ function eesc_ext_profile_modules() {
   $ret[]='views_attach';
   $ret[]='views_export';
   $ret[]='views_slideshow';
-  $ret[]='views_slideshow_singleframe';
   $ret[]='photo_gallery';
   $ret[]='viewscarousel';
   $ret[]='views_ui';
