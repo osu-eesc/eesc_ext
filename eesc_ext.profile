@@ -285,7 +285,7 @@ function eesc_ext_profile_tasks(&$task = 'profile', $url = null) {
         drupal_set_message(t('Roles and permissions set up.'));
 
 				//set default theme to eesc_ext
-        db_query("UPDATE {system} SET status=1 WHERE name='eesc_ext'");
+        db_query("UPDATE {system} SET status=1 WHERE name='extension'");
         variable_set('theme_default','eesc_ext');
         drupal_set_message(t('EESC Extension is now the default theme.'));
 
